@@ -2,17 +2,47 @@
 @import "@nuxt/ui";
 
 @theme static {
-    --font-sans: "Public Sans", sans-serif;
+    --font-sans: Inter, ui-sans-serif, system-ui, sans-serif;
 
-    --color-green-50: #effdf5;
-    --color-green-100: #d9fbe8;
-    --color-green-200: #b3f5d1;
-    --color-green-300: #75edae;
-    --color-green-400: #00dc82;
-    --color-green-500: #00c16a;
-    --color-green-600: #00a155;
-    --color-green-700: #007f45;
-    --color-green-800: #016538;
-    --color-green-900: #0a5331;
-    --color-green-950: #052e16;
+    --color-blue-50: #eff6ff;
+    --color-blue-100: #dbeafe;
+    --color-blue-200: #bfdbfe;
+    --color-blue-300: #93c5fd;
+    --color-blue-400: #60a5fa;
+    --color-blue-500: #3b82f6;
+    --color-blue-600: #2563eb;
+    --color-blue-700: #1d4ed8;
+    --color-blue-800: #1e40af;
+    --color-blue-900: #1e3a8a;
+    --color-blue-950: #172554;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+}
+
+.demo-grid {
+    background-image: linear-gradient(to right, color-mix(in srgb, var(--ui-border) 55%, transparent) 1px, transparent 1px), linear-gradient(to bottom, color-mix(in srgb, var(--ui-border) 55%, transparent) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.demo-surface {
+    border: 1px solid var(--ui-border);
+    background: color-mix(in srgb, var(--ui-bg) 92%, transparent);
+    backdrop-filter: blur(16px);
+}
+
+.demo-code {
+    overflow-x: auto;
+    border-radius: 0.75rem;
+    background: #020617;
+    padding: 1rem;
+    color: #e2e8f0;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.8125rem;
+    line-height: 1.6;
 }
